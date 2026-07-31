@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias! | JOTA Portfolio</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="Gracias por contactarme. He recibido tu mensaje con éxito.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css?v=20260421-prod">
+    
+    <style>
+        .thanks-hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 1.5rem;
+            position: relative;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .thanks-content {
+            max-width: 800px;
+            z-index: 2;
+        }
+
+        .thanks-eyebrow {
+            font-family: var(--font-primary);
+            font-size: 0.85rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: #ceb6f5;
+            margin-bottom: 2rem;
+            display: block;
+            opacity: 0;
+            animation: fadeInUp 0.8s forwards 0.2s;
+        }
+
+        .thanks-title {
+            font-family: var(--font-heading);
+            font-size: clamp(3.5rem, 8vw, 7rem);
+            line-height: 0.95;
+            letter-spacing: -0.04em;
+            color: #fff;
+            margin-bottom: 2.5rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s forwards 0.4s;
+        }
+
+        .thanks-title span {
+            display: block;
+        }
+
+        .thanks-title .accent {
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(255,255,255,0.3);
+            font-style: italic;
+        }
+
+        .thanks-desc {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            line-height: 1.6;
+            color: rgba(255,255,255,0.6);
+            max-width: 600px;
+            margin: 0 auto 3.5rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s forwards 0.6s;
+        }
+
+        .thanks-actions {
+            opacity: 0;
+            animation: fadeInUp 0.8s forwards 0.8s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Ambient Drift for consistency */
+        .ambient-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60vw;
+            height: 60vw;
+            background: radial-gradient(circle, rgba(110, 58, 255, 0.08) 0%, transparent 70%);
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <!-- Navigation (Simplified for focus) -->
+    <nav class="navbar" style="background: transparent; border-bottom: none;">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">JOTA</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="thanks-hero">
+            <div class="ambient-glow"></div>
+            
+            <div class="thanks-content">
+                <span class="thanks-eyebrow">Confirmación de envío</span>
+                
+                <h1 class="thanks-title">
+                    <span>¡Listo! Tu mensaje</span>
+                    <span class="accent">ha sido enviado.</span>
+                </h1>
+                
+                <p class="thanks-desc">
+                    Muchas gracias por contactarme. He recibido tu información con éxito. Muy pronto me pondré en contacto contigo para conversar e iniciar algo increíble juntos.
+                </p>
+                
+                <div class="thanks-actions">
+                    <a href="index.html" class="btn btn-primary" style="padding: 1.1rem 3.5rem;">Volver al Inicio</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Simplified Footer -->
+    <footer class="footer-premium" style="padding: 4rem 0 2rem; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container" style="text-align: center;">
+            <p style="color: rgba(255,255,255,0.4); font-size: 0.85rem;">&copy; 2026 JOTA. Diseño y comunicación visual.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
